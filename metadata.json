@@ -1,0 +1,6 @@
+{
+  "name": "REMAP",
+  "description": "Transform intention into action and reflection. A behavioral productivity app built on cognitive psychology to clarify goals, execute micro-steps, track accountability without guilt, and adapt when stuck.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

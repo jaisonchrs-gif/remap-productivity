@@ -1,0 +1,32 @@
+{
+  "name": "REMAP — Intention, Action & Reflection",
+  "short_name": "Remap",
+  "description": "Transform intention into action and reflection. Built on cognitive psychology to clarify goals, execute micro-steps, track accountability without guilt, and adapt when stuck.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F7F6F2",
+  "theme_color": "#F7F6F2",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

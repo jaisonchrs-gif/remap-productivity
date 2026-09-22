@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-main: #F7F6F2;
+    --text-primary: #171717;
+    --text-secondary: #6F6F6A;
+    --border-subtle: #DDDCD6;
+    --accent: #1F5EFF;
+  }
+
+  .dark {
+    --bg-main: #181816;
+    --text-primary: #EBEAE5;
+    --text-secondary: #9E9D97;
+    --border-subtle: #2C2C28;
+    --accent: #3B75FF;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    background-color: #181816;
+    color: #EBEAE5;
+  }
+
+  html:not(.dark) {
+    color-scheme: light;
+    background-color: #F7F6F2;
+    color: #171717;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* GPU-accelerated smooth waveform pulse */
+@keyframes remapWave {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-remap-wave {
+  animation: remapWave 1.4s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Custom editorial focus ring */
+input:focus, textarea:focus, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
